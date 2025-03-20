@@ -1,0 +1,12 @@
+1). Первым делом необходимо создать БД:
+CREATE DATABASE mydb;
+2). Необходимо ввести команду для работы в нашей раннее созданной БД:
+use mydb;
+3). Создаем таблицу с нашими полями:
+CREATE TABLE companies (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    company_name VARCHAR(255) NOT NULL,
+    inn VARCHAR(12) NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    email VARCHAR(255) NOT NULL
+);
